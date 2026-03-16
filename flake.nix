@@ -10,22 +10,16 @@
     flake-utils.lib.eachDefaultSystem (system: let
       pkgs = import nixpkgs { inherit system; };
     in {
-      packages.default = pkgs.buildNpmPackage {
-        pname = "akeyless-secrets-manager";
-        version = "0.0.0-dev";
-        src = self;
-        npmDepsHash = "sha256-+lxFRxM4ZzaJGkTKK/LPSnM5hBLVwldWzxo5Ix9FgRU="; # TODO: set correct hash
-        dontNpmBuild = false;
-        npmBuildScript = "compile";
-        meta = {
-          description = "VS Code / Cursor extension for managing Akeyless secrets and scanning for hardcoded secrets";
-          homepage = "https://github.com/pleme-io/Akeyless-Cursor-Plugin";
-          license = pkgs.lib.licenses.mit;
-        };
-      };
+      # NOTE: buildNpmPackage fails because keytar requires node-gyp with native
+      # platform libs (libsecret on Linux, Security.framework on macOS).
+      # Build with: npm install && npm run compile && vsce package
 
       devShells.default = pkgs.mkShellNoCC {
-        packages = with pkgs; [ nodejs_22 ];
+        packages = with pkgs; [
+          nodejs_22
+          python3
+          pkg-config
+        ];
       };
     });
 }
