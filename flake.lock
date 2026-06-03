@@ -2332,11 +2332,11 @@
         "substrate": "substrate"
       },
       "locked": {
-        "lastModified": 1780463050,
-        "narHash": "sha256-WxLzs8ure/j2h0xdOe6fq33ucOby+AUMuIFi7weqiVA=",
+        "lastModified": 1780477986,
+        "narHash": "sha256-+xxXdDCE+C9TZO7bP14eoCxxoTv/NsNhWKSY2Eu8TxQ=",
         "owner": "pleme-io",
         "repo": "pleme-linker",
-        "rev": "043ddd889517c88f72e28c8900fa707ac5db41d0",
+        "rev": "478ea669173e1adaca89fd8239e352f7da4f0889",
         "type": "github"
       },
       "original": {
