@@ -488,11 +488,11 @@
         "rust-overlay": "rust-overlay"
       },
       "locked": {
-        "lastModified": 1780614188,
-        "narHash": "sha256-8uj/ypWoaeeEXnmAlltoC/7SePVWUCxTiTt+6NpMVB0=",
+        "lastModified": 1780630679,
+        "narHash": "sha256-hhQyVAYmNKziZ0T+T4Gsk0PYmnz4vdzOzpkJAmDASKM=",
         "owner": "cachix",
         "repo": "devenv",
-        "rev": "21d73ce1e943df373568607d23121a4f286f0ecf",
+        "rev": "90ed6227ab389dd4e874a69a724f25dba312b754",
         "type": "github"
       },
       "original": {
@@ -2332,11 +2332,11 @@
         "substrate": "substrate"
       },
       "locked": {
-        "lastModified": 1780628577,
-        "narHash": "sha256-qIGTt6GJeMbGiSHDQDJBYvRUeYMIOK9q1PyHArfbHw4=",
+        "lastModified": 1780636439,
+        "narHash": "sha256-tqn8P3CCT55H2XLLzf+bWN4JPWBk6iXoYhZvNF4yS2I=",
         "owner": "pleme-io",
         "repo": "pleme-linker",
-        "rev": "1482609800a2b882d1d60bbaad5b3743f902b6e4",
+        "rev": "f067c1026bbb3522a8a3c933ca3253cfd0653e39",
         "type": "github"
       },
       "original": {
