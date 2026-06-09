@@ -2,10 +2,9 @@
   description = "VS Code / Cursor extension for managing Akeyless secrets and scanning for hardcoded secrets";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.11";
+    nixpkgs.follows = "substrate/nixpkgs";
     substrate = {
       url = "github:pleme-io/substrate";
-      inputs.nixpkgs.follows = "nixpkgs";
     };
     pleme-linker = {
       url = "github:pleme-io/pleme-linker";
